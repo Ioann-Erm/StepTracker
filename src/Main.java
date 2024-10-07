@@ -8,7 +8,8 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-
+        //Good
+        //Отличная идея вынести в меню в отдельный класс, молодец!
         Menu menu = new Menu();
         StepTracker stepTracker = new StepTracker(scanner);
 
@@ -29,6 +30,8 @@ public class Main {
             } else if (command == 4) {
                 System.out.println("Пока-пока");
                 break;
+            // Yellow
+            // Есть негласное правило, что мы ставим пробел перед else
             }else {
                 System.out.println("Неверная команда");
             }

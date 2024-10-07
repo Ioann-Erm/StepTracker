@@ -19,6 +19,10 @@ public class StepTracker {
 
         }
     }
+    // Green
+    // Весь метод сделан очень здорово.
+    // Реализованы корректные проверки входных данных.
+    // Все записывается и обрабатывается так, как необходимо, молодчина!
     void addNewNumberStepsPerDay() {
         System.out.println();
         System.out.println();
@@ -58,6 +62,8 @@ public class StepTracker {
         int stepsPerDay;
         while (true){
             stepsPerDay = scanner.nextInt();
+            // Yellow
+            // Странно, что 0 является корректным значением
             if (stepsPerDay < 0){
                 System.out.println("Невозможное значение!");
             }else {
@@ -72,7 +78,9 @@ public class StepTracker {
     }
 
 
-
+    // Red
+    // Метод ничего не должен возвращать
+    // Он просто сохраняет новую цель по шагам
     int changeStepGoal(){
 
         System.out.println();
@@ -82,6 +90,8 @@ public class StepTracker {
         while (true){
             goalByStepsPerDay = scanner.nextInt();
             if (goalByStepsPerDay < 0){
+                // Yellow
+                // Странно, что 0 является корректным значением
                 System.out.println("Невозможное значение");
             }else {
                 System.out.println("Значение сохранено!");
@@ -103,6 +113,8 @@ public class StepTracker {
         System.out.println();
         System.out.println("Всего шагов за месяц: " + monthData.sumStepsFromMonth() + ".");
         System.out.println();
+        // Red
+        // Орфография
         System.out.println("Максимальное колличество шагов за день: " + monthData.maxStepsFromMonth() + ".");
         System.out.println();
         System.out.println("Лучшая серия дней по шагам: " + monthData.bestSeries(goalByStepsPerDay) + ".");

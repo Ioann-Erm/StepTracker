@@ -37,7 +37,9 @@ public class MonthData {
         }
         return maxSteps;
     }
-
+    // Green
+    // Прекрасная реализация метода поиска лучшей серии!
+    // Алгоритм работает корректно при любых данных :)
     int bestSeries(int goalByStepsPerDay){
 
         int bestStepSeries = 0;
